@@ -2176,4 +2176,7 @@ form.comments_form input{
     margin-right: 30px;
 }
 
-
+input.field-with-error{
+    border: 1px solid red;
+    color: red;
+}
