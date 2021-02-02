@@ -1472,6 +1472,7 @@ a.broad:before{
     display: block;
     font-size: 29px;
     color: #59a44e;
+    z-index: 2;
 }
 
 #myOverlay {
