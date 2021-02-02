@@ -1256,8 +1256,8 @@ a.broad:before{
 
 .text_block_views{
     margin-top: 10px;
-    padding: 0 0 0 15px;
-    border-left: 3px solid #4a4a4a;
+    /*padding: 0 0 0 15px;*/
+    /*border-left: 3px solid #4a4a4a;*/
 }
 
 /*@media (max-width: 1460px) {*/
