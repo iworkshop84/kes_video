@@ -42,6 +42,7 @@
 
 <li class="has__children"><a href="#">Menu</a>
 <ul class="sub__menu_list">
+<!--  В этом меню зачем то дважды выводятся ссылки на все файлы и популярные -->
 		<li class=""><a href="https://www.vyoumtube.com/all_file">All video</a>
 
 		</li><li class=""><a href="https://www.vyoumtube.com/rated_file">Popular video</a>
@@ -313,7 +314,11 @@
 				<div class="content_img_wrapper">
 					<a href="https://www.vyoumtube.com/single/162">
 						<div class="content_img">
-							<video controls="controls" preload="none" poster="https://objects.redgrape.tech/videos/img1966a0e8707e455b38aea62ce791eeeaa71861c3e5709bb91fe0c80491dd9e4d?AWSAccessKeyId=7ZKJOVR8E995536S3DQL&amp;Expires=1612177062&amp;Signature=bPoiW%2BMVrvYpV6MhrSIU1xVRLvc%3D" width="270" height="180">
+
+<!-- Для того чтобы видео не налазили друг на друга нужно в следующей строке поставить width="100%" -->
+<!-- Это касается любых выводов видео. У всех блоков есть размез который динамически меняется в зависимости от разрешения экрана -->
+<!-- Указание жёсткого размера приводит к переполнению блоков-->
+							<video controls="controls" preload="none" poster="https://objects.redgrape.tech/videos/img1966a0e8707e455b38aea62ce791eeeaa71861c3e5709bb91fe0c80491dd9e4d?AWSAccessKeyId=7ZKJOVR8E995536S3DQL&amp;Expires=1612177062&amp;Signature=bPoiW%2BMVrvYpV6MhrSIU1xVRLvc%3D" width="100%" height="180">
 								<source src="Vyoumtube%20The%20liberated%20video%20sharing%20platform_files/1966a0e8707e455b38aea62ce791eeeaa71861c3e5709bb91fe0c80491dd.xml" type="video/ogg;  codecs=&quot;theora, vorbis&quot;">
 								<source src="Vyoumtube%20The%20liberated%20video%20sharing%20platform_files/1966a0e8707e455b38aea62ce791eeeaa71861c3e5709bb91fe0c80491dd.xml" type="video/mp4;  codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
 								<source src="Vyoumtube%20The%20liberated%20video%20sharing%20platform_files/1966a0e8707e455b38aea62ce791eeeaa71861c3e5709bb91fe0c80491dd.xml" type="video/webm; codecs=&quot;vp8, vorbis&quot;">
@@ -363,6 +368,9 @@
 				</div>
 				<div class="content_text_block">
 					 <div class="video__chanel_img">
+
+<!-- Я заметил что ссылка на аватарку под видео имеет какие то ошибки в коде, это нужно поправить, раньше этого не было -->
+
 						<a href="#"><img src="images/3.htm" <="" a="">
 					</a></div><a href="#">
 					</a><div class="text_block_autor"><a href="#"><b>Author: </b></a><a href="https://www.vyoumtube.com/by_login/3">aaa@mail.ru</a></div>
