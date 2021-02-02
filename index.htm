@@ -83,27 +83,110 @@
     <div class="header__links">
         <a class="myLinkModal" href="#">Log In</a>
     </div>
-    <div id="loginPopupBlock">
-        <div class="title">Login</div>
-<span id="myModal__close" class="close"><i class="fas fa-times"></i></span>
 
-<div class="auth__form">
-    <form action="/form" class="form-auth" method="POST">
-        <input class="auth__login" name="email" placeholder="Login" type="text">
-        <input class="auth__password" name="passw" placeholder="Password" type="password">
 
-        <div class="auth__form_buttons">
-            <input class="auth__button" name="login" type="submit" value="LOGIN">
-            <input class="auth__button" name="register" type="submit" value="REGISTER">
-        </div>
-        <div class="auth__socials">
-            <a href="#"> <i class="fab fa-twitter-square"></i></a>
-            <a href="#"><i class="fab fa-google-plus-square"></i></a>
-            <a href="#"><i class="fab fa-facebook-square"></i></a>
-        </div>
-</form></div>
+<!--<div id="loginPopupBlock">-->
+<!--	<div class="title">Login</div>-->
+<!--<span id="myModal__close" class="close"><i class="fas fa-times"></i></span>-->
 
-    </div>
+<!--	<div class="auth__form">-->
+<!--		<form action="/form" class="form-auth" method="POST">-->
+<!--			<input class="auth__login" name="email" placeholder="Login" type="text">-->
+<!--			<input class="auth__password" name="passw" placeholder="Password" type="password">-->
+
+<!--			<div class="auth__form_buttons">-->
+<!--				<input class="auth__button" name="login" type="submit" value="LOGIN">-->
+<!--				<input class="auth__button" name="register" type="submit" value="REGISTER">-->
+<!--			</div>-->
+<!--			<div class="auth__socials">-->
+<!--				<a href="#"> <i class="fab fa-twitter-square"></i></a>-->
+<!--				<a href="#"><i class="fab fa-google-plus-square"></i></a>-->
+<!--				<a href="#"><i class="fab fa-facebook-square"></i></a>-->
+<!--			</div>-->
+<!--		</form>-->
+<!--	</div>-->
+
+<!--</div>-->
+
+<!--			Переделанная форма логина(старую оставил закоменченной для примера). 3 таба, в каждом отдельная форма + вывод социалок-->
+<div id="loginPopupBlock">
+				<span id="myModal__close" class="close"><i class="fas fa-times"></i></span>
+
+	<div class="tabs">
+		<div class="tab">
+			<input type="radio" id="tab1" name="tab-group" checked>
+			<label for="tab1" class="tab-title">Login</label>
+			<section class="tab-content">
+						<div class="auth__form">
+							<form action="/form" class="form-auth" method="POST">
+								<input class="auth__login" name="email" placeholder="Login" type="text">
+								<input class="auth__password" name="passw" placeholder="Password" type="password">
+
+								<div class="auth__form_buttons">
+									<input class="auth__button" name="login" type="submit" value="LOGIN">
+								</div>
+										<div class="auth__socials">
+											<a href="#"> <i class="fab fa-twitter-square"></i></a>
+											<a href="#"><i class="fab fa-google-plus-square"></i></a>
+											<a href="#"><i class="fab fa-facebook-square"></i></a>
+										</div>
+							</form>
+						</div>
+
+			</section>
+		</div>
+		<div class="tab">
+			<input type="radio" id="tab2" name="tab-group">
+			<label for="tab2" class="tab-title">Sign Up</label>
+			<section class="tab-content">
+
+				<div class="auth__form">
+					<form action="/form" class="form-auth" method="POST">
+						<input class="auth__login" name="email" placeholder="Login" type="text">
+
+						<input type="checkbox" id="terms">
+						<label for="terms">Agree with Term of Service</label>
+						<div class="auth__form_buttons">
+							<input class="auth__button" name="register" type="submit" value="REGISTER">
+						</div>
+						<div class="auth__socials">
+							<a href="#"> <i class="fab fa-twitter-square"></i></a>
+							<a href="#"><i class="fab fa-google-plus-square"></i></a>
+							<a href="#"><i class="fab fa-facebook-square"></i></a>
+						</div>
+					</form>
+				</div>
+
+			</section>
+		</div>
+		<div class="tab">
+			<input type="radio" id="tab3" name="tab-group">
+			<label for="tab3" class="tab-title">Reset password</label>
+			<section class="tab-content">
+				<div class="auth__form">
+					<form action="/form" class="form-auth" method="POST">
+						<input class="auth__login" name="email" placeholder="Login" type="text">
+
+						<div class="auth__form_buttons">
+							<input class="auth__button" name="register" type="submit" value="RESET PASSWORD">
+						</div>
+						<div class="auth__socials">
+							<a href="#"> <i class="fab fa-twitter-square"></i></a>
+							<a href="#"><i class="fab fa-google-plus-square"></i></a>
+							<a href="#"><i class="fab fa-facebook-square"></i></a>
+						</div>
+					</form>
+				</div>
+
+			</section>
+		</div>
+	</div>
+
+
+
+</div>
+
+
     <div id="myOverlay"></div>
 
     <div class="header__burger">
